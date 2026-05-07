@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI x Journalism Summit 2026 — My Schedule</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #e5e2dc;
+    --accent: #c8453c;
+    --star: #e8a93b;
+    /* Track colors */
+    --preview: #5b8def;
+    --play: #2da678;
+    --adopt: #b87333;
+    --govern: #8b5cf6;
+    --plenary: #6b6b6b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 18px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  header .sub {
+    font-size: 13px;
+    opacity: 0.7;
+  }
+  header a { color: #fff; text-decoration: underline; opacity: 0.85; }
+
+  .controls {
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    padding: 14px 20px;
+    position: sticky;
+    top: 70px;
+    z-index: 99;
+  }
+  .controls-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .controls-row:last-child { margin-bottom: 0; }
+  .search {
+    flex: 1;
+    min-width: 200px;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-size: 14px;
+    background: var(--bg);
+  }
+  .search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .pill {
+    border: 1px solid var(--line);
+    background: var(--card);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.15s;
+  }
+  .pill:hover { border-color: var(--ink); }
+  .pill.active {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+  .pill[data-track="Preview"].active { background: var(--preview); border-color: var(--preview); }
+  .pill[data-track="Play"].active { background: var(--play); border-color: var(--play); }
+  .pill[data-track="Adopt"].active { background: var(--adopt); border-color: var(--adopt); }
+  .pill[data-track="Govern"].active { background: var(--govern); border-color: var(--govern); }
+
+  .stats {
+    font-size: 12px;
+    color: var(--muted);
+    margin-left: auto;
+  }
+  .clear-btn {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .day-section { margin-bottom: 32px; }
+  .day-header {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .timeslot {
+    margin-bottom: 16px;
+  }
+  .timeslot-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .timeslot-conflict {
+    color: var(--accent);
+  }
+  .session {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--plenary);
+    border-radius: 6px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.15s, transform 0.15s;
+  }
+  .session:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
+  .session[data-track="Preview"] { border-left-color: var(--preview); }
+  .session[data-track="Play"] { border-left-color: var(--play); }
+  .session[data-track="Adopt"] { border-left-color: var(--adopt); }
+  .session[data-track="Govern"] { border-left-color: var(--govern); }
+
+  .session.starred {
+    background: #fffbe8;
+    border-color: var(--star);
+  }
+  .session.starred-conflict {
+    background: #ffe8e6;
+    border-color: var(--accent);
+  }
+  .session.plenary { opacity: 0.7; cursor: default; }
+
+  .session-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .session-title {
+    font-weight: 600;
+    font-size: 15px;
+    flex: 1;
+  }
+  .star-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    color: #ccc;
+    transition: color 0.15s, transform 0.15s;
+  }
+  .star-btn:hover { transform: scale(1.2); }
+  .star-btn.active { color: var(--star); }
+
+  .track-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 6px;
+  }
+  .track-tag[data-track="Preview"] { background: var(--preview); }
+  .track-tag[data-track="Play"] { background: var(--play); }
+  .track-tag[data-track="Adopt"] { background: var(--adopt); }
+  .track-tag[data-track="Govern"] { background: var(--govern); }
+  .track-tag[data-track="Plenary"] { background: var(--plenary); }
+
+  .session-meta {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .session-speakers {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+    font-style: italic;
+  }
+  .session-desc {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    font-size: 14px;
+    color: #333;
+  }
+  .session.expanded .session-desc { display: block; }
+  .session-desc .speaker-list {
+    margin-top: 10px;
+  }
+  .session-desc .speaker-list .speaker {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+  .session-desc .speaker-list .speaker strong { font-weight: 600; }
+
+  .conflict-warn {
+    display: none;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  .session.starred-conflict .conflict-warn { display: block; }
+
+  .empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 40px;
+  }
+
+  /* My Schedule view */
+  .view-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 12px;
+  }
+  .view-toggle button {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--line);
+    background: var(--card);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .view-toggle button:first-child { border-radius: 6px 0 0 6px; }
+  .view-toggle button:last-child { border-radius: 0 6px 6px 0; border-left: none; }
+  .view-toggle button.active {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+
+  .export-bar {
+    margin-top: 20px;
+    padding: 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .export-bar button {
+    padding: 6px 14px;
+    background: var(--ink);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 0 4px;
+  }
+  .export-bar button:hover { background: var(--accent); }
+
+  @media (max-width: 600px) {
+    main { padding: 12px; }
+    header h1 { font-size: 17px; }
+    .controls { padding: 10px 12px; top: 64px; }
+    .session-head { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AI × Journalism Summit 2026</h1>
+  <div class="sub">May 13–14, Baltimore · <a href="https://www.hackshackers.com/summit-2026-program/" target="_blank">official program</a></div>
+</header>
+
+<div class="controls">
+  <div class="controls-row">
+    <input type="search" class="search" id="search" placeholder="Search sessions, speakers, descriptions…">
+  </div>
+  <div class="controls-row">
+    <button class="pill active" data-filter="all">All tracks</button>
+    <button class="pill" data-filter="track" data-track="Preview">Preview</button>
+    <button class="pill" data-filter="track" data-track="Play">Play</button>
+    <button class="pill" data-filter="track" data-track="Adopt">Adopt</button>
+    <button class="pill" data-filter="track" data-track="Govern">Govern</button>
+  </div>
+  <div class="controls-row">
+    <div class="view-toggle" style="flex:1; max-width:300px;">
+      <button class="view-btn active" data-view="all">All sessions</button>
+      <button class="view-btn" data-view="starred">★ My picks (<span id="star-count">0</span>)</button>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<script>
+const STORAGE_KEY = 'hh-summit-2026-stars';
+let sessions = [];
+let starred = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+let activeTrack = 'all';
+let activeView = 'all';
+let searchTerm = '';
+
+async function loadData() {
+  try {
+    const res = await fetch('sessions.json');
+    sessions = await res.json();
+  } catch (e) {
+    // Fallback: embedded data (in case opened via file://)
+    sessions = window.SESSIONS_FALLBACK || [];
+  }
+  render();
+}
+
+function saveStars() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...starred]));
+  document.getElementById('star-count').textContent = starred.size;
+}
+
+function toggleStar(id, e) {
+  e.stopPropagation();
+  if (starred.has(id)) starred.delete(id);
+  else starred.add(id);
+  saveStars();
+  render();
+}
+
+function toggleExpand(el) {
+  el.classList.toggle('expanded');
+}
+
+function matchesSearch(s, term) {
+  if (!term) return true;
+  const t = term.toLowerCase();
+  if (s.title.toLowerCase().includes(t)) return true;
+  if (s.description.toLowerCase().includes(t)) return true;
+  return s.speakers.some(sp =>
+    sp.name.toLowerCase().includes(t) || sp.role.toLowerCase().includes(t)
+  );
+}
+
+function getTimeKey(s) { return `${s.day}|${s.time}`; }
+
+function render() {
+  const main = document.getElementById('main');
+  let visible = sessions.filter(s => {
+    if (activeTrack !== 'all' && s.track !== activeTrack) return false;
+    if (activeView === 'starred' && !starred.has(s.id)) return false;
+    if (!matchesSearch(s, searchTerm)) return false;
+    return true;
+  });
+
+  // Compute conflicts for starred sessions in same timeslot
+  const starredByTime = {};
+  sessions.filter(s => starred.has(s.id) && s.track !== 'Plenary').forEach(s => {
+    const k = getTimeKey(s);
+    starredByTime[k] = (starredByTime[k] || 0) + 1;
+  });
+
+  document.getElementById('stats').textContent =
+    `${visible.length} session${visible.length === 1 ? '' : 's'}`;
+  document.getElementById('star-count').textContent = starred.size;
+
+  if (visible.length === 0) {
+    main.innerHTML = `<div class="empty">No sessions match. Try clearing filters.</div>`;
+    return;
+  }
+
+  // Group by day, then by timeslot
+  const byDay = {};
+  visible.forEach(s => {
+    if (!byDay[s.day]) byDay[s.day] = {};
+    if (!byDay[s.day][s.time]) byDay[s.day][s.time] = [];
+    byDay[s.day][s.time].push(s);
+  });
+
+  let html = '';
+  ['Wed May 13', 'Thu May 14'].forEach(day => {
+    if (!byDay[day]) return;
+    html += `<div class="day-section"><h2 class="day-header">${day}</h2>`;
+    Object.keys(byDay[day]).forEach(time => {
+      const slot = byDay[day][time];
+      const k = `${day}|${time}`;
+      const conflict = starredByTime[k] > 1;
+      html += `<div class="timeslot">
+        <div class="timeslot-label ${conflict ? 'timeslot-conflict' : ''}">
+          ${time}${conflict ? ' ⚠ conflict in your picks' : ''}
+        </div>`;
+      slot.forEach(s => {
+        const isStar = starred.has(s.id);
+        const isPlenary = s.track === 'Plenary';
+        const conflictClass = (isStar && conflict) ? 'starred-conflict' :
+                              (isStar ? 'starred' : '');
+        const speakerLine = s.speakers.length
+          ? s.speakers.map(sp => sp.name).join(', ')
+          : '';
+        const speakerDetails = s.speakers.length
+          ? `<div class="speaker-list">${s.speakers.map(sp =>
+              `<div class="speaker"><strong>${sp.name}</strong> — ${sp.role}</div>`
+            ).join('')}</div>`
+          : '';
+        html += `
+          <div class="session ${conflictClass} ${isPlenary ? 'plenary' : ''}"
+               data-track="${s.track}"
+               onclick="toggleExpand(this)">
+            <div class="session-head">
+              <div style="flex:1">
+                <span class="track-tag" data-track="${s.track}">${s.track}</span>
+                <span class="session-title">${escapeHtml(s.title)}</span>
+                ${speakerLine ? `<div class="session-speakers">${escapeHtml(speakerLine)}</div>` : ''}
+              </div>
+              ${!isPlenary ? `
+                <button class="star-btn ${isStar ? 'active' : ''}"
+                        onclick="toggleStar('${s.id}', event)"
+                        title="${isStar ? 'Remove from picks' : 'Add to picks'}">
+                  ${isStar ? '★' : '☆'}
+                </button>` : ''}
+            </div>
+            ${conflict && isStar ? `<div class="conflict-warn">⚠ Overlaps with another pick</div>` : ''}
+            ${s.description ? `
+              <div class="session-desc">
+                <p>${escapeHtml(s.description)}</p>
+                ${speakerDetails}
+              </div>` : ''}
+          </div>`;
+      });
+      html += `</div>`;
+    });
+    html += `</div>`;
+  });
+
+  // Export bar (only when viewing My Picks)
+  if (activeView === 'starred' && starred.size > 0) {
+    html += `<div class="export-bar">
+      <strong>Your picks: ${starred.size}</strong> &nbsp;·&nbsp;
+      <button onclick="exportText()">Copy as text</button>
+      <button onclick="exportICS()">Download .ics</button>
+      <button onclick="clearAll()">Clear all picks</button>
+    </div>`;
+  }
+
+  main.innerHTML = html;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]));
+}
+
+function clearAll() {
+  if (!confirm('Clear all your picks?')) return;
+  starred.clear();
+  saveStars();
+  render();
+}
+
+function exportText() {
+  const picks = sessions.filter(s => starred.has(s.id))
+    .sort((a,b) => a.dayNum - b.dayNum || a.time.localeCompare(b.time));
+  let txt = 'My AI x Journalism Summit 2026 Schedule\n';
+  txt += '=========================================\n\n';
+  let curDay = '';
+  picks.forEach(s => {
+    if (s.day !== curDay) {
+      curDay = s.day;
+      txt += `\n${curDay}\n${'-'.repeat(curDay.length)}\n`;
+    }
+    txt += `\n${s.time}  [${s.track}]\n  ${s.title}\n`;
+    if (s.speakers.length) txt += `  Speakers: ${s.speakers.map(sp => sp.name).join(', ')}\n`;
+  });
+  navigator.clipboard.writeText(txt).then(() => {
+    alert('Copied to clipboard!');
+  });
+}
+
+function exportICS() {
+  const picks = sessions.filter(s => starred.has(s.id));
+  const pad = n => String(n).padStart(2, '0');
+  // Baltimore time -> UTC roughly: EDT is UTC-4 in May
+  const dayMap = { 'Wed May 13': '20260513', 'Thu May 14': '20260514' };
+
+  let ics = 'BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//HH Summit//EN\r\n';
+  picks.forEach((s, i) => {
+    const [start, end] = s.time.split('–').map(t => t.trim());
+    const [sh, sm] = start.split(':').map(Number);
+    const [eh, em] = end.split(':').map(Number);
+    // Convert local EDT (UTC-4) to UTC
+    const startUTC = `${dayMap[s.day]}T${pad(sh+4)}${pad(sm)}00Z`;
+    const endUTC = `${dayMap[s.day]}T${pad(eh+4)}${pad(em)}00Z`;
+    ics += `BEGIN:VEVENT\r\n`;
+    ics += `UID:${s.id}@hh-summit-2026\r\n`;
+    ics += `DTSTAMP:${startUTC}\r\n`;
+    ics += `DTSTART:${startUTC}\r\n`;
+    ics += `DTEND:${endUTC}\r\n`;
+    ics += `SUMMARY:[${s.track}] ${s.title.replace(/[,;]/g, ' ')}\r\n`;
+    const desc = (s.description + (s.speakers.length ? '\\n\\nSpeakers: ' + s.speakers.map(sp => sp.name + ' (' + sp.role + ')').join('; ') : ''))
+      .replace(/\n/g, '\\n').replace(/[,;]/g, ' ');
+    ics += `DESCRIPTION:${desc}\r\n`;
+    ics += `LOCATION:Baltimore MD\r\n`;
+    ics += `END:VEVENT\r\n`;
+  });
+  ics += 'END:VCALENDAR\r\n';
+
+  const blob = new Blob([ics], { type: 'text/calendar' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'hh-summit-2026-schedule.ics';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Event listeners
+document.getElementById('search').addEventListener('input', e => {
+  searchTerm = e.target.value;
+  render();
+});
+
+document.querySelectorAll('.pill').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.pill').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    activeTrack = b.dataset.track || 'all';
+    render();
+  });
+});
+
+document.querySelectorAll('.view-btn').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.view-btn').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    activeView = b.dataset.view;
+    render();
+  });
+});
+
+loadData();
+</script>
+
+</body>
+</html>
