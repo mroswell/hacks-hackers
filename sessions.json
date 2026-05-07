@@ -1,0 +1,676 @@
+[
+  {
+    "id": "w1-welcome",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:00–10:25",
+    "track": "Plenary",
+    "title": "Welcome / Opening",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "w1-blueprint",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:30–11:45",
+    "track": "Govern",
+    "title": "The Blueprint for Success: How to Get Buy-In and Build AI Systems That Actually Work",
+    "description": "Many newsrooms experiment with AI, but few turn those experiments into systems journalists trust and use. Teams struggle to align editors, engineers, and product leaders around priorities, guardrails, and clear ownership. This session shares practical lessons from what has worked and what has failed, focusing on how newsrooms earn buy-in and design AI systems built to last. The takeaway is simple: success comes from clear goals, shared standards, and strong product thinking, not from chasing better tools.",
+    "speakers": [
+      {"name": "Ryan Struyk", "role": "Director, AI Innovation, CNN"},
+      {"name": "Heather Ciras", "role": "Deputy Managing Editor, Audience, The Boston Globe"},
+      {"name": "Rubina Fillion", "role": "Deputy Editorial Director, A.I. Initiatives, The New York Times"},
+      {"name": "Ole Reissmann", "role": "Director A.I., SPIEGEL-Group"}
+    ]
+  },
+  {
+    "id": "w1-listening",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:30–11:45",
+    "track": "Play",
+    "title": "Listening at Scale: Building AI Tools for Audio and Video Monitoring",
+    "description": "Journalists are surrounded by audio and video they cannot keep up with, from civic meetings and police scanners to podcasts and livestreams. This session shows how multimodal AI systems listen and watch at scale, turning overwhelming streams into usable story leads. Drawing on tools built at Verso, the speaker demos a real-time police scanner monitor and a system analyzing how narratives spread on The Joe Rogan Experience. Attendees then build and adapt a simple video analysis workflow of their own, leaving with a working prototype they can apply to any beat.",
+    "speakers": [
+      {"name": "Kaveh Waddell", "role": "Co-founder and principal, Verso"}
+    ]
+  },
+  {
+    "id": "w1-localmtgs",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:30–11:45",
+    "track": "Adopt",
+    "title": "Why You Should Use AI to Monitor Local Meetings",
+    "description": "There are 90,000 local government entities in the United States, and the news industry isn't following nearly as much of this as it once did. AI gives us a path to regaining our footing. Stephen Stirling and Kevin Hoffman will preview Scribe, a tool being developed at the Inquirer to track, summarize and score local meetings based on news relevance.",
+    "speakers": [
+      {"name": "Stephen Stirling", "role": "Data Editor, Philadelphia Inquirer"},
+      {"name": "Kevin Hoffman", "role": "AI Engineer, The Philadelphia Inquirer"}
+    ]
+  },
+  {
+    "id": "w1-google",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:30–11:45",
+    "track": "Play",
+    "title": "From Concept to Code: Building Prototypes & Agents With Google AI",
+    "description": "Move beyond the chat box and start building. This hands-on workshop provides a deep dive into Google's AI ecosystem—including NotebookLM, Gemini, Stitch, and Flow—designed specifically for news workflows. You'll learn how to leverage these tools for editorial and business use cases, transitioning from a viewer to a builder. Attendees will spend the session developing simple functional prototypes and agents that can be deployed immediately. You can also just come to watch!",
+    "speakers": [
+      {"name": "Etan Horowitz", "role": "Global Innovation Programs Manager, News Partnerships, Google"}
+    ]
+  },
+  {
+    "id": "w1-businessplan",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:30–11:45",
+    "track": "Play",
+    "title": "Build the News Industry's AI Business Plan",
+    "description": "It is possible the news industry is sitting on 1.5 trillion tokens or more of verified, attributed reporting. AI companies need that content. Most newsrooms don't act like they have leverage. This session changes that. Drawing on research from the University of Michigan, presenter Richard Lui argues the news industry has four potential avenues to claim its place in the AI value chain: a news data exchange, a news-specific control layer, an industry-owned model, and a collective rights organization modeled on the music industry. You'll hear the case for each. Then you'll build. In small groups, you'll pick one vehicle and develop a one-page business plan: who are your customers, what asset do you own, how do you make money, who has to be in the room, and what kills it in year one. Groups present.",
+    "speakers": [
+      {"name": "Richard Lui", "role": "Anchor and Filmmaker, MS Now; Principal, CAREGenome, University of Michigan"}
+    ]
+  },
+  {
+    "id": "w1-problem",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "10:30–11:45",
+    "track": "Play",
+    "title": "What's Your Problem?",
+    "description": "Exploring how AI could benefit your newsroom but keep running into dead ends? Many efforts stall not because the technology falls short, but because the problem is still too fuzzy to know what success would even look like. In this collaborative workshop, Technical Advisors from Hacks/Hackers' Newsroom AI Lab will help participants get clear on the specific challenge they want to address, who they are trying to help, and what questions they still need to answer before experimenting further. Guided by real newsroom examples, practical exercises, and peer feedback, attendees will leave with a crisp definition of the challenge in front of them and a stronger sense of what to do next to move the work forward.",
+    "speakers": [
+      {"name": "Paige Moody", "role": "Developer and Technical Advisor, Hacks/Hackers & Big Local News"},
+      {"name": "Jake Kara", "role": "Technical Advisor, Hacks/Hackers Newsroom AI Lab"}
+    ]
+  },
+  {
+    "id": "w1-lunch",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "11:45–13:15",
+    "track": "Plenary",
+    "title": "Lunch",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "w2-futureproof",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "13:15–14:30",
+    "track": "Govern",
+    "title": "Future-Proofing Facts",
+    "description": "A fake AI freelancer fooled major outlets. A summer reading list cited books that don't exist. Experts quoted by the BBC turned out to be synthetic personas. We are living through a verification crisis — and it's accelerating. This workshop tackles the hardest question in modern journalism: how do you confirm that anything is real in a shifting landscape? We'll map the threat landscape — from deepfaked Zoom sources and AI-generated documents to convincing fake institutional websites — and move from diagnosis to action. Participants will get hands-on with emerging verification tools and content provenance standards like C2PA that let you trace the origin and history of digital content.",
+    "speakers": [
+      {"name": "Hilke Schellmann", "role": "Associate Professor of Journalism, NYU and Princeton CITP"},
+      {"name": "Loreben Tuquero", "role": "Staff Writer, PolitiFact"}
+    ]
+  },
+  {
+    "id": "w2-notebooklm",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "13:15–14:30",
+    "track": "Play",
+    "title": "Next-Gen NotebookLM: 9 Bold and Impactful New Things Newsrooms Can Do",
+    "description": "AI works best in journalism when treated as an adversarial co-pilot, not a summarization engine. This workshop introduces nine research and analysis workflows using NotebookLM to interrogate documents, surface blind spots, and stress-test assumptions. Participants learn how to use critique-driven techniques, reverse-argument analysis, and perspective shifts to probe policy papers and large document sets while staying grounded in sources and citations. Attendees leave with a practical playbook for turning dense material into deeper, more rigorous reporting.",
+    "speakers": [
+      {"name": "Jeremy Caplan", "role": "Director of Teaching and Learning, CUNY Newmark Graduate School of Journalism"}
+    ]
+  },
+  {
+    "id": "w2-strib",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "13:15–14:30",
+    "track": "Adopt",
+    "title": "Rapid AI Prototyping Inside the Minnesota Star Tribune",
+    "description": "Legacy newsrooms are built for accuracy, and not necessarily for speed. When the Minnesota Star Tribune decided to build its first audience-facing AI product, we had to act like \"pirates in the navy\" – navigating a nearly 160-year-old culture while working at startup speeds. In this session, we'll break down the \"Pirate Ship\" model used to launch the Culinary Compass and Strib Fair Bot. We'll share a raw look at how stakeholder research and rapid feedback loops allowed us to bypass traditional \"battleship\" bureaucracy, providing a practical framework for any legacy organization looking to launch fast without sinking the ship.",
+    "speakers": [
+      {"name": "Frank Bi", "role": "Head of Tools & Transformation, The Minnesota Star Tribune"}
+    ]
+  },
+  {
+    "id": "w2-survey",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "13:15–14:30",
+    "track": "Preview",
+    "title": "The Survey That Asks \"One More Thing\" (on Purpose)",
+    "description": "Adaptive surveys use AI to ask \"one more thing\" on purpose, balancing structure with responsiveness to context. This session explores how a small set of fixed questions, paired with AI-guided follow-ups in natural language, helps researchers probe real constraints while staying on script and avoiding generic or leading prompts. Drawing on early field tests, including a rapid-response study during the Iran–Israel conflict internet shutdown and a WhatsApp-based project with Latino migrants in Philadelphia using WhatsApp, speakers share lessons on making audience research more locally relevant, especially in hard-to-reach communities.",
+    "speakers": [
+      {"name": "Patrick Boehler", "role": "Founder, Gazzetta"},
+      {"name": "Madison Karas", "role": "Lead, Service Design, Gazzetta"}
+    ]
+  },
+  {
+    "id": "w2-customize",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "13:15–14:30",
+    "track": "Preview",
+    "title": "Using AI to Customize Content & Connect Readers",
+    "description": "Discover how AI can help newsrooms foster healthier, cross-partisan conversations, calm heated comment threads, and better connect with diverse audiences. This session offers research-backed, practical tips for using AI to create more constructive social media posts, summarize online comments to reduce toxicity, and turn traditional story formats into easy-to-read content like bullet lists and Q&As. We'll also explore how AI can help you tailor your stories to fit specific audiences, like younger readers.",
+    "speakers": [
+      {"name": "Ava Motes", "role": "Research Associate, Center for Media Engagement, The University of Texas at Austin"}
+    ]
+  },
+  {
+    "id": "w2-vibe1",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "13:15–14:30",
+    "track": "Play",
+    "title": "Vibe Coding Jam Session",
+    "description": "Bring your laptops and command line! This is a hands-on jam session where we will share what we're working on, tips and tricks for working with AI coding tools and see what we can build. Open to anyone experienced or if you just want to get started. If you haven't vibe coded yet, we will get you set up by the end of this session and ready to build.",
+    "speakers": []
+  },
+  {
+    "id": "w2-break1",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "14:30–14:45",
+    "track": "Plenary",
+    "title": "Break",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "w3-betterproducts",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "14:45–16:00",
+    "track": "Adopt",
+    "title": "Building Better Products With AI",
+    "description": "As AI reshapes how audiences discover and consume news, the question becomes how we use AI to build products that are genuinely useful, trustworthy and aligned with audiences' needs. This session brings together three participants in the AI Journalism Labs: Leaders & Builders who are actively prototyping AI-integrated news products inside their organizations. In this session, we'll explore what it actually takes to design, test and iterate on AI-enabled features and workflows in real newsrooms.",
+    "speakers": [
+      {"name": "Aldana Vales", "role": "AI Journalism Lab Lead, Craig Newmark Graduate School of Journalism at CUNY"},
+      {"name": "Scott Klein", "role": "Journalist, Independent"},
+      {"name": "Julia Moak", "role": "Publisher, Greenpointers"},
+      {"name": "Kalle Pirhonen", "role": "AI producer, Ilta-Sanomat (Sanoma Media Finland)"}
+    ]
+  },
+  {
+    "id": "w3-bitbit",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "14:45–16:00",
+    "track": "Play",
+    "title": "Knowledge Supercharged by AI, Not Vice Versa",
+    "description": "We will explore how newsrooms can become AI-ready in few practical steps: structuring reporting as knowledge, configuring AI to reflect a newsroom's voice, and generating new editorial experiences on demand. Through a live demo of the Bit Bit Press, we'll show how editors can ingest information, customize AI prompts and guardrails, and create AI-powered widgets and reporting workflows in real time.",
+    "speakers": [
+      {"name": "Daniele Codega", "role": "Bit Bit Press"}
+    ]
+  },
+  {
+    "id": "w3-nyt",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "14:45–16:00",
+    "track": "Adopt",
+    "title": "Smart, Confident, and Wrong: Designing Responsible A.I. Tools in the Newsroom",
+    "description": "Designing AI tools in a newsroom means working with systems that sound confident even when they are wrong, inside a profession built on accuracy and trust. This session shows how careful product and workflow design helps newsrooms capture the benefits of AI without sacrificing editorial standards. Drawing on tools built at The New York Times, the speakers share practical design principles, demos, and industry examples that focus on constraining hallucinations, tracing sources, and building AI products journalists and audiences can trust.",
+    "speakers": [
+      {"name": "Dylan Freedman", "role": "A.I. Projects Editor, The New York Times"},
+      {"name": "James O'Toole", "role": "Senior Machine Learning Engineer, A.I. Initiatives, The New York Times"}
+    ]
+  },
+  {
+    "id": "w3-lapped",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "14:45–16:00",
+    "track": "Govern",
+    "title": "Are U.S. Journalists Getting Lapped in the AI Race?",
+    "description": "While newsrooms in the other countries are building custom LLMs, AI moderation systems and new audience formats, many U.S. journalists remain stuck between skepticism and paralysis. CNTI's multi-country surveys reveal a striking gap: Journalists in lower-resourced countries are adopting AI faster and more creatively than their American counterparts. This moderated discussion brings together researchers and practitioners from four countries to share what the data say, showcase innovations from outside the U.S., and ask whether internal governance is accelerating or stalling progress. Come ready to argue about whether American journalism's resistance to AI is principled caution — or a competitive liability.",
+    "speakers": [
+      {"name": "Amy Mitchell", "role": "Executive Director, Center for News, Technology & Innovation"},
+      {"name": "Akintunde Babatunde", "role": "Executive Director, Centre for Journalism Innovation and Development"}
+    ]
+  },
+  {
+    "id": "w3-datadesk",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "14:45–16:00",
+    "track": "Play",
+    "title": "AI as Your Data Desk Partner",
+    "description": "Use Claude Code to turn datasets into story prototypes. This hands-on session teaches you to interrogate data structure, generate visuals, and test narrative directions in minutes. You'll work with real public datasets. AI surfaces hidden relationships, challenges assumptions, and reframes data through different editorial lenses. You maintain full journalistic control while moving from raw data to early-stage story concepts. Leave with practical prompting strategies and a repeatable workflow for using AI as a creative partner in ideation and analysis.",
+    "speakers": [
+      {"name": "Lauren Malkani", "role": "Experience Designer, Seven Mile media"},
+      {"name": "Nick Harbaugh", "role": "Co-founder, Seven Mile Media"}
+    ]
+  },
+  {
+    "id": "w3-break2",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:00–16:15",
+    "track": "Plenary",
+    "title": "Break",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "w4-movefast",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:15–17:30",
+    "track": "Govern",
+    "title": "Move Fast Without Breaking Trust: Challenges in AI Governance for the Future of News",
+    "description": "News organizations are under pressure to experiment with AI, and that pressure is creating real tension inside the building. Executives want to ship. Editors, reporters, and producers want guardrails. Product teams want to iterate. Unions want clarity on what's assistive and what's substitutive. Everyone is operating without a settled playbook — and the cost of getting it wrong shows up in hallucinated quotes, biased outputs, eroded reader trust, and labor disputes that could have been avoided with clearer policy upfront. This session brings together newsroom leaders and AI practitioners for a candid conversation about the governance choices that determine whether AI experimentation strengthens journalism or undermines it.",
+    "speakers": [
+      {"name": "Justin Hendrix", "role": "CEO and Editor, Tech Policy Press"},
+      {"name": "Liam Andrew", "role": "Technology Lead, Product & AI Studio, American Journalism Project"},
+      {"name": "Erica Osher", "role": "VP, AI Labs, NPR"}
+    ]
+  },
+  {
+    "id": "w4-150projects",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:15–17:30",
+    "track": "Adopt",
+    "title": "Making Sense of AI in News: What 150+ Newsroom Projects Reveal and Where the Field Should Go Next",
+    "description": "Over the past three years, newsrooms have rapidly expanded their use of artificial intelligence across reporting, workflows, and audience engagement. While experimentation is accelerating, much of it is clustering in familiar areas -- often focused on efficiency and content production --with limited clarity on what is delivering lasting value. This session draws on a research project conducted in collaboration with the Knight Center for the Future of News at Arizona State University, mapping more than 150 AI initiatives in U.S. newsrooms from 2022–2025. It offers a field-level view of how AI efforts are actually taking shape—where they are converging, where gaps remain, and what that suggests about the current moment. Building on these insights, the Knight Center will introduce a practical framework for the next phase of AI in journalism. Grounded in real-world experimentation, the framework is designed to help the field move beyond fragmented activity toward more intentional progress, focusing on applications that strengthen journalism's civic role, earn public trust, and build durable capacity.",
+    "speakers": [
+      {"name": "Djordje Padejski", "role": "Associate Director, JSK Journalism Fellowships, Stanford University"},
+      {"name": "Andy Pergam", "role": "Executive Director and Professor, Knight Center for the Future of News, ASU"}
+    ]
+  },
+  {
+    "id": "w4-buildbuyignore",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:15–17:30",
+    "track": "Play",
+    "title": "Build, Buy, or Ignore: A Framework for Prioritizing AI in News Organizations",
+    "description": "AI has created an explosion of ideas inside newsrooms. Transcription tools, research assistants, document analysis, workflow automation, and custom newsroom copilots are suddenly everywhere. If we're lucky, those ideas come from every direction: reporters, editors, product managers, engineers, and leadership. But most news organizations have not hired teams of AI engineers or built dedicated AI labs. Resources are limited while expectations are high. The real challenge is not imagination; it is deciding which ideas are actually worth pursuing. This talk introduces a practical decision framework for evaluating AI opportunities in news organizations and deciding when to build internally, buy from vendors, or simply ignore the idea.",
+    "speakers": [
+      {"name": "Shira Center", "role": "VP, Innovation and Strategic Initiatives, Boston Globe Media"},
+      {"name": "Aimee Rinehart", "role": "Founder, Frontier Collective"},
+      {"name": "Chase Davis", "role": "Founder, Principal, Local Angle, LLC"}
+    ]
+  },
+  {
+    "id": "w4-everlaw",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:15–17:30",
+    "track": "Preview",
+    "title": "How law firms manage document-heavy investigations, and how journalists can use these tools",
+    "description": "See how Everlaw's document review and discovery platform can help reporters dig deeper into large document sets, understand data, surface insights, and streamline their investigations to chart a straighter path to the truth.",
+    "speakers": [
+      {"name": "Chris Miles", "role": "Media Partnerships Lead, Everlaw for Good"},
+      {"name": "Aaron Patton", "role": "Senior Solutions Architect, Everlaw"}
+    ]
+  },
+  {
+    "id": "w4-gigafact",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:15–17:30",
+    "track": "Preview",
+    "title": "AI as a Power Assist for Political Accountability Reporting",
+    "description": "Public comments from national political figures exist across all corners of the internet in videos, podcast episodes, radio show appearances, and more. With the help of AI, we've built a platform that transcribes, indexes, and makes searchable this vast corpus of data, and currently assists political accountability reporting in newsrooms both big and small across the U.S. This session will detail how we maintain the quality of the AI's analyses, our findings from over a year of development, and what we see as the role AI will play in the future of political accountability journalism.",
+    "speakers": [
+      {"name": "Chandran Sankaran", "role": "Founder / CEO, Gigafact"},
+      {"name": "Emily Le Coz", "role": "Executive editor-in-chief, Suncoast Searchlight"},
+      {"name": "Kevin Grant", "role": "Board Member, Gigafact"}
+    ]
+  },
+  {
+    "id": "w4-mathematicians",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "16:15–17:30",
+    "track": "Adopt",
+    "title": "Large Language Mathematicians: Public Records in Record Time",
+    "description": "AI is great at a lot of things, but math and number crunching are not its strong suits. The American City Business Journals wanted a tool to surface stories from public records, but kept running into the same problem: the LLMs would dream up what it thought was the right numbers, instead of actually doing the math. In this session, we'll explain how we paired a series of LLM inputs with behind-the-scenes JavaScript to transform hundreds of public records into a useful output for reporters and editors. This same logic flow has been applied to anything that requires a precise output: word counts, data analysis, and more.",
+    "speakers": [
+      {"name": "Tyson Bird", "role": "Editorial Product Manager, American City Business Journals"}
+    ]
+  },
+  {
+    "id": "w4-reception",
+    "day": "Wed May 13",
+    "dayNum": 1,
+    "time": "17:30–21:00",
+    "track": "Plenary",
+    "title": "Reception in the Loft",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "t0-welcome",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "09:00–09:15",
+    "track": "Plenary",
+    "title": "Welcome / Opening",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "t1-atlas",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "09:15–10:30",
+    "track": "Play",
+    "title": "How a Three-Person Startup Added AI as the Fourth Co-Founder",
+    "description": "The Independent Journalism Atlas is a vetted database of 1,200+ creator-journalists — built and maintained by a three-person team using AI at every stage of the pipeline. This session walks through the exact AI workflows that make it possible: automated data ingestion from Substack, newsletters, and partner submissions; LLM-powered cleaning and standardization of messy CSV data via scripted Python processes; and AI-assisted verification of inclusion criteria like original accountability journalism and trust markers. We'll show how we use Claude as a daily operational layer — from structured morning briefings synthesizing calendar, email, Slack, and industry news, to generating partner \"co-lists\" that let organizations build curated subsets of the Atlas for their communities. Attendees will see how a resource-constrained team can punch far above its weight by treating AI not as a novelty but as essential infrastructure for journalism's emerging creator ecosystem.",
+    "speakers": [
+      {"name": "Justin Bank", "role": "Co-founder, The Independent Journalism Atlas"},
+      {"name": "Ryan Kellett", "role": "Co-founder, The Independent Journalism Atlas"}
+    ]
+  },
+  {
+    "id": "t1-sparks",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "09:15–10:30",
+    "track": "Adopt",
+    "title": "Building Sparks: What We Learned Turning 1.2 Million Story Pickups Into an AI-Powered Recommendation Engine",
+    "description": "Newsrooms are moving fast on AI for summarization and workflows. This session asks a different question: what if AI helped journalists decide what stories to write and when to publish them. The session shares how Stacker Newswire built Sparks, an AI feature that analyzes patterns across 1.2 million earned pickups to recommend story topics and timing. The speaker explains how the team separated high-risk editorial decisions from lower-risk ones where AI adds value, and how editorial judgment stays central. The approach, while built for a newswire, offers a model other newsrooms can adapt for staff writers and freelancers.",
+    "speakers": [
+      {"name": "Ken Romano", "role": "SVP Product, Stacker"},
+      {"name": "Cole Carter", "role": "Data Engineer, Stacker"}
+    ]
+  },
+  {
+    "id": "t1-aipolicy",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "09:15–10:30",
+    "track": "Govern",
+    "title": "Do We Really Need an AI Use Policy?",
+    "description": "A dynamic session that will chart scenarios of what the newsroom of the future will look like, the risks AI would pose to these future newsrooms and what policies we could put into place today to prepare. Building on the forward-looking product sessions on day 1, this interactive session will lead attendees through future mapping to develop AI ethics guidelines for any newsroom of the future.",
+    "speakers": [
+      {"name": "Alex Mahadevan", "role": "Director of AI Innovation Lab | MediaWise, Poynter"},
+      {"name": "Emma Cosgrove", "role": "Editorial Director, AI Innovation, Business Insider"}
+    ]
+  },
+  {
+    "id": "t1-vibe2",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "09:15–10:30",
+    "track": "Play",
+    "title": "Vibe Coding Jam Session",
+    "description": "Bring your laptops and command line! This is a hands-on jam session where we will share what we're working on, tips and tricks for working with AI coding tools and see what we can build. Open to anyone experienced or if you just want to get started. If you haven't vibe coded yet, we will get you set up by the end of this session and ready to build.",
+    "speakers": []
+  },
+  {
+    "id": "t1-codingagents",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "09:15–10:30",
+    "track": "Play",
+    "title": "AI Coding Agents for Investigative Journalism",
+    "description": "AI coding agents speed up investigative work only when configured for transparency, provenance, and defensibility. This session shows how to turn Claude Code from a fast but risky assistant into a methodical collaborator using domain-specific skills that document decisions and require human approval. Participants learn how configuration changes workflows, how to encode editorial standards into prompts, and when AI agents help or hurt investigative reporting.",
+    "speakers": [
+      {"name": "Nick Hagar", "role": "Postdoctoral Scholar, Northwestern University"}
+    ]
+  },
+  {
+    "id": "t1-break",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:30–10:45",
+    "track": "Plenary",
+    "title": "Break",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "t2-lawsuits",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:45–12:00",
+    "track": "Govern",
+    "title": "What About the Lawsuits? AI Copyright and Journalism's Legal Frontier",
+    "description": "The rush to adopt AI in newsrooms has outpaced the legal battles that will shape what's permissible. A handful of publishers — including the Center for Investigative Reporting, publisher of Mother Jones and Reveal — have gone to court over how AI companies trained their systems on copyrighted journalism. Most have not. This session unpacks the state of AI-related copyright litigation, the fair use arguments AI companies are making, and what newsrooms learned (and failed to learn) from earlier fights over search and social. Whether your newsroom is partnering with AI companies, building its own tools, or just watching from the sidelines, these cases will define the rules of the road.",
+    "speakers": [
+      {"name": "Monika Bauerlein", "role": "CEO, The Center for Investigative Reporting"}
+    ]
+  },
+  {
+    "id": "t2-crawlers",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:45–12:00",
+    "track": "Preview",
+    "title": "AI Crawlers and the New Publisher Reality: Lessons From the Newspack Network",
+    "description": "As generative AI systems ingest publisher content at scale, newsrooms face a new, largely invisible layer of traffic: AI bots. Based on aggregated traffic analysis across a diverse set of Newspack publishers, this talk shares concrete findings about AI crawler volume, behavior patterns, content targeting, and downstream effects on search and referral traffic. We'll pair data insights with actionable takeaways, including how publishers can use tools like Cloudflare, Scrunch, and TollBit to monitor, manage, and respond to AI bot activity. The goal: help news organizations move from uncertainty to informed strategy.",
+    "speakers": [
+      {"name": "Joe Boydston", "role": "Senior technical account manager, Newspack"},
+      {"name": "Tracy Becker", "role": "Head of Customer Experience, Newspack, Automattic"}
+    ]
+  },
+  {
+    "id": "t2-fluency",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:45–12:00",
+    "track": "Adopt",
+    "title": "From Fear to Fluency: Building an AI-Ready Newsroom Culture",
+    "description": "Many newsrooms are testing AI tools, but few are building the culture to use them well. This session draws on work with Danish newsrooms and journalism programs, including the Center for AI at the Danish School of Media and Journalism. It shares a practical framework to move journalists from fear and confusion to confidence and professional fluency. You will learn how to create psychological safety, structure responsible experimentation, and set clear editorial guardrails. The focus is not on tools. It is on culture, leadership and keeping human judgment at the center of AI use.",
+    "speakers": [
+      {"name": "Peder Hammerskov", "role": "Director, Center for AI at DMJX (Danish School of Media and Journalism)"}
+    ]
+  },
+  {
+    "id": "t2-hubbard",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:45–12:00",
+    "track": "Adopt",
+    "title": "Rolling Out AI Across Local Broadcast Markets: A Multi-Station Case Study",
+    "description": "Hubbard Broadcasting operates local TV stations across 13 markets. This session examines their partnership with Magid to implement Collaborator, an enterprise AI solution designed for journalists, across all stations. You'll see the reality of a multi-market rollout: navigating complex AI strategy decisions while balancing operational efficiency with journalistic integrity and local brand trust. The session walks through the actual deployment process, from initial testing to full-scale integration. Learn the pitfalls Hubbard encountered, the benefits realized, and how they maintained editorial standards across different markets. This provides a proven roadmap for broadcast newsroom leaders moving from AI experimentation to organization-wide implementation.",
+    "speakers": [
+      {"name": "Janet Early", "role": "Senior Manager, Content Strategy, Magid"}
+    ]
+  },
+  {
+    "id": "t2-coach",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:45–12:00",
+    "track": "Play",
+    "title": "Make Your Own Personal Coach",
+    "description": "What if we move beyond fear of AI replacing jobs and ask how it can make us better? In this session, I share how I began experimenting with AI to strengthen my own critical thinking. The result is \"Giving Editor,\" a public, always-on fundraising coach for journalism. It does not generate copy. It guides users to refine their own messages. Like a strong editor, it offers structured feedback and pushes for clarity, focus and impact. The goal is not automation. It is growth. A practical look at how AI can sharpen our judgment and creative skill.",
+    "speakers": [
+      {"name": "Sonya Quick", "role": "Director of Membership, CalMatters & The Markup"}
+    ]
+  },
+  {
+    "id": "t2-vibe3",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "10:45–12:00",
+    "track": "Play",
+    "title": "Vibe Coding Jam Session",
+    "description": "Bring your laptops and command line! This is a hands-on jam session where we will share what we're working on, tips and tricks for working with AI coding tools and see what we can build. Open to anyone experienced or if you just want to get started. If you haven't vibe coded yet, we will get you set up by the end of this session and ready to build.",
+    "speakers": []
+  },
+  {
+    "id": "t2-lunch",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "12:00–13:00",
+    "track": "Plenary",
+    "title": "Lunch",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "t3-propublica",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "13:00–14:15",
+    "track": "Adopt",
+    "title": "Spreadsheets, Not Chatbots: How ProPublica Investigates With AI",
+    "description": "What happens when you embed an AI engineer inside a newsroom and tell them to help wherever needed? At ProPublica, it led to \"Spreadsheet Inference,\" a method that combines the rigor of spreadsheet reporting with the scale of AI. This session shows how real investigations became product iterations, not the other way around. You'll see how the team turned working methods into documentation, code notebooks, Google Apps Scripts and a custom interface, then spread adoption through internal posts and reporter word of mouth. You'll leave with a practical model for integrating AI into investigative work and tools you can use right away.",
+    "speakers": [
+      {"name": "Aaron Brezel", "role": "AI Engineering Fellow, ProPublica"}
+    ]
+  },
+  {
+    "id": "t3-beatbooks",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "13:00–14:15",
+    "track": "Play",
+    "title": "Building Beat Books From News Archives",
+    "description": "Most newsroom archives hold years of institutional knowledge few reporters ever read. This session shows how to unlock that material to better inform reporting and onboard new journalists. Based on a university course where students built \"beat books\" from Maryland's Eastern Shore archives, we share a reproducible pipeline: ingest archival text, use large language models to extract structured metadata, and generate reference tools for reporters new to a beat. You will see the full workflow, from processing articles with open models to producing interactive HTML and markdown outputs. Participants will build a sample beat book and examine what failed, including hallucinated sources and inconsistent classifications, and how validation improved results.",
+    "speakers": [
+      {"name": "Derek Willis", "role": "Lecturer, Data and Computational Journalism, University of Maryland"}
+    ]
+  },
+  {
+    "id": "t3-heaut",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "13:00–14:15",
+    "track": "Preview",
+    "title": "From AI Journaling to the Mind Economy: Rethinking How Journalism Understands Human Narratives",
+    "description": "HEAUT is an AI journaling platform that turns personal writing into structured knowledge. The session introduces the Mind Economy, where personal narratives become knowledge assets for journalism. Participants will see how HEAUT analyzes emotional patterns and narrative arcs across journal entries, transforming raw writing into insights journalists can use. The demonstration shows how AI-assisted reflective writing surfaces authentic perspectives, identifies emerging social sentiments, and expands the sources available for reporting. While journalism traditionally extracts stories from interviews and documents, AI journaling generates narrative intelligence directly from lived experiences over time.",
+    "speakers": [
+      {"name": "Dexiang \"Darren\" Gao", "role": "Founder, HEAUT Foundation"}
+    ]
+  },
+  {
+    "id": "t3-mentalmuscle",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "13:00–14:15",
+    "track": "Govern",
+    "title": "AI Without Losing the Human Touch: Sustaining Mental Muscle in AI-Assisted Journalism",
+    "description": "This session explores how newsrooms can balance AI productivity gains with human cognitive preservation. We'll highlight risks of over-reliance on AI for basic tasks and discuss strategies to foster critical thinking, creativity, and decision-making—ensuring AI enhances journalism without diminishing human ingenuity.",
+    "speakers": [
+      {"name": "Vania André", "role": "Publisher / Editor-in-chief, The Haitian Times"}
+    ]
+  },
+  {
+    "id": "t3-decentralized",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "13:00–14:15",
+    "track": "Play",
+    "title": "A Decentralized Agentic-AI Editorial Board for an International Newsroom",
+    "description": "This session moves beyond chatbots to explore multi-agent AI workflows in an editorial context. Participants work in small groups to prototype a decentralized AI \"editorial board,\" where specialized agents take on roles such as fact-checker, ethics reviewer, and cultural advisor. Using a simulated cross-border editorial crisis, groups configure their agents to navigate legal, ethical, and cultural tensions facing global newsrooms. Attendees leave with a practical understanding of how agentic systems support editorial decision-making, where human judgment remains essential, and how decentralized AI workflows surface bias, objectivity, and narrative risks in international reporting.",
+    "speakers": [
+      {"name": "Areeba Fatima", "role": "Journalist, Columbia University"},
+      {"name": "Angela Eichhorst", "role": "AI data reporter/product developer, CT Mirror"}
+    ]
+  },
+  {
+    "id": "t3-mcp",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "13:00–14:15",
+    "track": "Play",
+    "title": "Using MCP to Analyze Text and Visualize Data",
+    "description": "This session shows how you can use Model Context Protocol (MCP) to analyze text collections and turn results into clear visual outputs. We show you step by step how to turn unstructured text to tables and visuals editors trust.",
+    "speakers": [
+      {"name": "Hong Qu", "role": "Lecturer, Harvard Kennedy School"}
+    ]
+  },
+  {
+    "id": "t3-break",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "14:15–14:30",
+    "track": "Plenary",
+    "title": "Break",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "t4-eval",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "14:30–15:45",
+    "track": "Govern",
+    "title": "Evaluating A.I. in the Newsroom: From Patterns to Benchmarks",
+    "description": "You've heard the promises, but how do you know if A.I. tools deliver? First, we'll share evaluation patterns from real newsrooms: document tagging, alt text drafting, FOIA summarization, source verification. You'll learn to align stakeholders, surface usable data, and assess quality without adding friction for editors. We'll then dive deeper: tech companies benchmark models in ways that don't reflect journalistic values, so we'll show you how to build your own practical framework to cover accuracy, bias, hallucination rates, and transparency. You'll hear real findings that may make you rethink which tools you trust. Leave with a methodology, not just a vibe.",
+    "speakers": [
+      {"name": "Nikita Roy", "role": "Founder, Newsroom Robots Lab"},
+      {"name": "Duy Nguyen", "role": "Senior Machine-Learning Engineer, A.I Initiatives, The New York Times"},
+      {"name": "Teresa Mondría Terol", "role": "Senior Product Manager, AI Labs, NPR"}
+    ]
+  },
+  {
+    "id": "t4-localmodels",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "14:30–15:45",
+    "track": "Preview",
+    "title": "What's Possible With Local Models? Building Secure AI Pipelines for Investigative Journalism",
+    "description": "Newsrooms handle source communications and crowdsourced data that can't touch third-party servers without safeguards. Running AI locally solves the privacy problem but creates new ones: which models work, what hardware do you need, where do local pipelines fall short? Drawing on ProPublica's experiments building local model pipelines for an e-discovery system over sensitive data, this session will explore the current landscape of feasible local model experimentation — where it excels, where it falls short, and what's on the horizon. The session also surveys the full landscape of secure AI options: fully local open models, zero data retention APIs, privacy-first platforms like Confer that use end-to-end encryption and confidential computing. As these tools mature, how will they reshape investigative and accountability journalism?",
+    "speakers": [
+      {"name": "Ben Werdmuller", "role": "Senior Director of Technology, ProPublica"},
+      {"name": "Dana Chiueh", "role": "AI Engineering Fellow, ProPublica"}
+    ]
+  },
+  {
+    "id": "t4-archival",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "14:30–15:45",
+    "track": "Adopt",
+    "title": "Getting the Very, Very Best Out of Archival Audio",
+    "description": "We'll unpack what it took to build the system that has transcribed WBEZ's audio archive, focusing on technical challenges that arise out of the archival use-case. We'll focus on audio preparation, speaker identification, and spellcheck, highlighting the counterintuitive problems we encountered and the ways we've solved them using AI and good old-fashioned machine learning. For example: why did we need to reverse-engineer Whisper? Once we've answered that, we'll talk about what you can do with transcripts like these. This will enthuse and inspire anyone with a tight budget, a large amount of audio, or with an interest in creative AI implementation.",
+    "speakers": [
+      {"name": "Mark Chonofsky", "role": "Chicago Public Media"}
+    ]
+  },
+  {
+    "id": "t4-newsdetector",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "14:30–15:45",
+    "track": "Adopt",
+    "title": "Building an AI Tool That Finds News Amid the Noise",
+    "description": "News Detector by The Baltimore Banner monitors more than 100 Maryland news and information sources, checking them several times a day. It evaluates each story for journalistic signals such as impact, novelty, timeliness, and local relevance, then uses editor-labeled data to assign a newsworthiness score. Editors get a prioritized list of leads to review, staying fully in control while AI handles the grunt work.",
+    "speakers": [
+      {"name": "Peter Rasmussen", "role": "Principal AI Engineer, The Baltimore Banner"},
+      {"name": "Biswajit Ganguly", "role": "CTO, The Baltimore Banner"}
+    ]
+  },
+  {
+    "id": "t4-pinpoint",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "14:30–15:45",
+    "track": "Play",
+    "title": "Pinpoint: Re-thinking Our Product for the Age of Generative AI",
+    "description": "Building generative AI into a product for users with varying technical skills is hard. The Google Pinpoint team will walk through what worked (and didn't work) for them and how they adapted their product development cycle along the way. You will leave with practical lessons on embedding AI into journalist workflows, from personalization to human-agent interfaces to getting people to actually use it.",
+    "speakers": [
+      {"name": "Yuval Shukroon", "role": "Product Manager, Google"}
+    ]
+  },
+  {
+    "id": "t4-break2",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "15:45–16:00",
+    "track": "Plenary",
+    "title": "Break",
+    "description": "",
+    "speakers": []
+  },
+  {
+    "id": "t5-closing",
+    "day": "Thu May 14",
+    "dayNum": 2,
+    "time": "16:00–16:30",
+    "track": "Plenary",
+    "title": "Closing",
+    "description": "",
+    "speakers": []
+  }
+]
